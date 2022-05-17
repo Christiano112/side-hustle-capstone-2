@@ -72,19 +72,22 @@ button:active {
     footer span {
         display: block;
     }
+    header {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 602px) {
     .navv.response {position: relative;}
     .navv.response .iconn {
         position: absolute;
-        right: .8rem;
-        top: 1rem;
+        right: .5rem;
+        top: 0;
     }
     .navv.response ul {
         display: flex;
         flex-direction: column;
-        margin: -1rem;
+        margin: 0;
     }
     .navv.response li:not(:last-child) {
         text-align: center;
