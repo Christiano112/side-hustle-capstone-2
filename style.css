@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1rem;
+    margin-bottom: 5rem;
+    background-color: blue;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    float: left;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: .3rem;
+}
+
+ul li a:hover {
+    background-color: #eee;
+    border-radius: .3rem;
+}
+
+.iconn {
+    display: none;
+}
+
+
+input {
+    margin-bottom: 1rem;
+    border: .05rem solid #000;
+    border-radius: .5rem;
+}
+
+select {
+    border: .05rem solid #000;
+    border-radius: .2rem;  
+}
+
+button {
+    margin: 3rem 0;
+    position: relative;
+}
+
+button:active {
+    transform: translate(all .5s);
+    bottom: -.5rem;
+    right: -.2rem;
+}
+
+#one, #two, #three, #four {
+    font-size: 1rem;
+    color: red;
+}
+
+/* Media Query */
+@media screen and (max-width: 602px) {
+    .navc {display: none;}
+    .iconn {
+        float: right;
+        display: block;
+    }
+    footer span {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    .navv.response {position: relative;}
+    .navv.response .iconn {
+        position: absolute;
+        right: .8rem;
+        top: 1rem;
+    }
+    .navv.response ul {
+        display: flex;
+        flex-direction: column;
+        margin: -1rem;
+    }
+    .navv.response li:not(:last-child) {
+        text-align: center;
+        display: block;
+        float: none;
+        position: relative;
+        padding: 0;
+    }
+    .navv.response li:last-child {
+        margin: -1rem;
+    }
+}
