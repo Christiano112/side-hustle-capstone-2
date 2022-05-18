@@ -95,6 +95,8 @@
             let numb;
             if (x == "" || x.length > 11) {
                 numb = "*Incorrect Number";
+            } else {
+                numb = "";
             }
             document.getElementById("two").innerHTML = numb;
         }
@@ -104,6 +106,8 @@
             let user;
             if (a == "") {
                 user = "*Input username";
+            } else {
+                user = "";
             }
             document.getElementById("three").innerHTML = user;
         }
@@ -113,6 +117,8 @@
             let email;
             if (d == "") {
                email = "*Email Required";
+            } else {
+                email = "";
             }
             document.getElementById("four").innerHTML = email;
         }
